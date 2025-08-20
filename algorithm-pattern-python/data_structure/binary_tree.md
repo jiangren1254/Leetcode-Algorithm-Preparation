@@ -188,6 +188,16 @@ class Solution:
 
 > 给定一个二叉树，找出其最大深度。
 
+- 我的思路
+
+```python
+这种适合使用分治法，最大深度嘛
+每个树当做一个整体，计算自己的最大深度就好了
+分治法YYDs
+```
+
+
+
 - 思路 1：分治法
 
 ```Python
@@ -228,6 +238,43 @@ class Solution:
 ### [balanced-binary-tree](https://leetcode-cn.com/problems/balanced-binary-tree/)
 
 > 给定一个二叉树，判断它是否是高度平衡的二叉树。
+
+- 我的思路
+  - 分治法YYDS
+  - 分治法从下到上
+  - 在如何得到左右两边的深度的时候卡住了
+    - 我的思路，在求平衡的时候返也返回深度，就是有两个返回值，isbalanced, depth（未尝试，感觉会很复杂）
+    - 模板做法，和我的一样，但是当前函数是只能返回一个布尔值，不能返回两个
+    - 解决，在函数内在写一个函数就好了
+    - 感觉这个算法有点缺陷，当树早就不平衡的时候，还是要判断完，不能提前结束
+
+```
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def isBalanced(self, root: Optional[TreeNode]) -> bool:
+
+        def depth(root):
+            if root is None:
+                return True, 0
+
+            leftIsBalanced, leftDepth = depth(root.left)
+            rightIsBalanced, rightDepth = depth(root.right)
+            
+            
+            return leftIsBalanced and  rightIsBalanced and abs(leftDepth- rightDepth) < 2, 1+max(leftDepth,rightDepth)
+        result,_ = depth(root)
+
+        return result
+
+        
+```
+
+
 
 - 思路 1：分治法，左边平衡 && 右边平衡 && 左右两边高度 <= 1，
 
@@ -287,11 +334,14 @@ class Solution:
 
 > 补充知识：
 >
-> ![image-20250804081557671](H:\500-DingLLM\LeetCode算法准备\algorithm-pattern-python\data_structure\assets\image-20250804081557671-1754266560717-1-1754266562851-3.png)
+> ![image-20250804081557671](assets\image-20250804081557671-1754266560717-1-1754266562851-3.png)
 
 ### [binary-tree-maximum-path-sum](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)
 
 > 给定一个**非空**二叉树，返回其最大路径和。
+
+- 我的思路：
+  - 做题没思路，但看下面的题解了，看了一遍，尝试使用分治法解决
 
 - 思路：分治法。最大路径的可能情况：左子树的最大路径，右子树的最大路径，或通过根结点的最大路径。其中通过根结点的最大路径值等于以左子树根结点为端点的最大路径值加以右子树根结点为端点的最大路径值再加上根结点值，这里还要考虑有负值的情况即负值路径需要丢弃不取。
 
