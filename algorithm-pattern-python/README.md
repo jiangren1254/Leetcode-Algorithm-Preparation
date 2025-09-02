@@ -1,6 +1,6 @@
 # 说明
 
-本项目为原项目 [algorithm-pattern](https://github.com/greyireland/algorithm-pattern) 的 Python3 语言实现版本，原项目使用 go 语言实现，目前已获 ![GitHub stars](https://img.shields.io/github/stars/greyireland/algorithm-pattern?style=social)。在原项目基础上，本项目添加了优先级队列，并查集，图相关算法等内容，基本覆盖了所有基础数据结构和算法，非常适合找工刷题的同学快速上手。以下为原项目 README，目录部分增加了本项目的新内容。
+本项目为原项目 [algorithm-pattern](https://github.com/greyireland/algorithm-pattern) 的 Python3 语言实现版本，原项目使用 go 语言实现，目前已获 ![GitHub stars](https://img.shields.io/github/stars/greyireland/algorithm-pattern?style=social)。在原项目基础上，本项目添加了优先级队列，并查集，图相关算法等内容，基本覆盖了所有基础数据结构和算法，非常适合找工作刷题的同学快速上手。以下为原项目 README，目录部分增加了本项目的新内容。
 
 # 算法模板
 
@@ -48,15 +48,15 @@
 
 ## 心得体会
 
-文章大部分是对题目的思路介绍，和一些问题的解析，有了思路还是需要自己手动写写的，所以每篇文章最后都有对应的练习题
+文章大部分是对题目的思路介绍，和一些问题的解析，有了思路还是需要自己手动写的，所以每篇文章最后都有对应的练习题
 
 刷完这些练习题，基本对数据结构和算法有自己的认识体会，基本大部分面试题都能写得出来，国内的 BAT、TMD 应该都不是问题
 
 从 4 月份找工作开始，从 0 开始刷 LeetCode，中间大概花了一个半月(6 周)左右时间刷完 240 题。
 
-![一个半月刷完240题](https://img.fuiboom.com/img/leetcode_time.png)
+![一个半月刷完240题](images/leetcode_time.png)
 
-![刷题记录](https://img.fuiboom.com/img/leetcode_record.png)
+![刷题记录](./assets/leetcode_record.png)
 
 开始刷题时，确实是无从下手，因为从序号开始刷，刷到几道题就遇到 hard 的题型，会卡住很久，后面去评论区看别人怎么刷题，也去 Google 搜索最好的刷题方式，发现按题型刷题会舒服很多，基本一个类型的题目，一天能做很多，慢慢刷题也不再枯燥，做起来也很有意思，最后也收到不错的 offer（最后去了宇宙系）。
 
@@ -70,15 +70,24 @@
 
 1、 [algorithm-pattern 练习题](https://greyireland.gitbook.io/algorithm-pattern/)
 
-![练习题](https://img.fuiboom.com/img/repo_practice.png)
+![练习题](images/repo_practice.png)
 
 2、 [LeetCode 卡片](https://leetcode-cn.com/explore/)
 
-![探索卡片](https://img.fuiboom.com/img/leetcode_explore.png)
+2025年，挪到了题库
+
+[题库 - 力扣 (LeetCode) 全球极客挚爱的技术成长平台](https://leetcode.cn/problemset/)
+
+![探索卡片](images/leetcode_explore.png)
 
 3、 [剑指 offer](https://leetcode-cn.com/problemset/lcof/)
 
-![剑指offer](https://img.fuiboom.com/img/leetcode_jzoffer.png)
+牛客上有一个剑指offer  
+力扣上好像没有用了
+
+[剑指offer_在线编程_牛客网](https://www.nowcoder.com/exam/oj/ta?page=1&tpId=13&type=265)
+
+![剑指offer](images/leetcode_jzoffer.png)
 
 刷题时间可以合理分配，如果打算准备面试了，建议前面两部分 一个半月 （6 周）时间刷完，最后剑指 offer 半个月刷完，边刷可以边投简历进行面试，遇到不会的不用着急，往模板上套就对了，如果面试官给你提示，那就好好做，不要错过这大好机会~
 
